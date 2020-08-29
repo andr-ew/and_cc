@@ -4770,6 +4770,7 @@ function cleanup()
   --externalshadow/
   
   clear_empty_shadows(selected_coll)
+  lm:unmap(g)
 end
 
 -- arc pattern stuff!
@@ -4913,3 +4914,6 @@ function load_midi_pattern(which)
     print("nofile")
   end
 end
+
+lm = include 'ledmap/led/ledmap'
+lm:map(g, '2011')
