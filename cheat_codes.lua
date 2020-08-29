@@ -4915,5 +4915,5 @@ function load_midi_pattern(which)
   end
 end
 
-lm = include 'ledmap/led/ledmap'
+lm = include 'ledmap/lib/ledmap'
 lm:map(g, '2011')
