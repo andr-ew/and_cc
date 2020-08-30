@@ -456,7 +456,7 @@ function grid_actions.init(x,y,z)
             end
           elseif grid.alt == 1 then
             if y == 8 then
-              sixteen_slices(x/5)
+              -- sixteen_slices(x/5)
             elseif y == 7 then
               rec_to_pad(x/5)
             elseif y == 6 then
@@ -527,7 +527,7 @@ function grid_actions.init(x,y,z)
               if key1_hold == true then key1_hold = false end
               if y == 4 then
                 menu = 2
-                page.loops_sel = math.floor((x/4)-1)
+                page.loops_sel = math.floor((x/4))
               end
               redraw()
             end
