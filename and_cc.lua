@@ -1,9 +1,9 @@
 -- and 
 
-subscript = include 'subscript/lib/subscript'
-cc = subscript 'cheat_codes'
+include 'cheat_codes'
 lm = include 'ledmap/lib/ledmap'
 
+cc = { init = init, cleanup = cleanup }
 
 function aa.init(n,d)
 
@@ -81,18 +81,6 @@ function init()
     lm:map(g, { 0, 4, 0, 4, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 })
 
     cc.init()    
-end
-
-function key(n,z)
-    cc.key(n,z)
-end
-
-function enc(n,d)
-    cc.enc(n,d)
-end
-
-function redraw()
-    cc.redraw()
 end
 
 function cleanup()
